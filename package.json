@@ -36,5 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.20.1",
+    "@types/prettier": "^2.7.3",
+    "prop-types": "^15.8.1"
   }
 }

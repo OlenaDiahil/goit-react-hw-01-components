@@ -2,6 +2,8 @@ import Profile from 'components/Profile/Profile'
 import React from 'react'
 import user from './assets/user'
 import Statistics from 'components/Statistics/Statistics'
+import FriendList from 'components/FriendList/FriendList';
+import TransactionHistory from 'components/TransactionHistory/TransactionHistory';
 
 const App = () => {
   return (
@@ -15,6 +17,10 @@ const App = () => {
       />
       
       <Statistics />
+
+      <FriendList />
+
+      <TransactionHistory />
     </>
   );
 };

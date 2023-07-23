@@ -1,14 +1,13 @@
 import React from 'react'
-import data from '../../assets/data'
 import PropTypes from 'prop-types';
 import { StatisticsCard, Title, StatList, Item, Label, Percentage } from './Statistics.styled';
 
-const Statistics = () => {
+const Statistics = ({ title, stats }) => {
   return (
     <StatisticsCard>
-      <Title>Upload stats</Title>
+      {title && <Title>{title}</Title>}
       <StatList>
-        {data.map(({ id, label, percentage }) => {
+        {stats.map(({ id, label, percentage }) => {
           return <Item key={id}>
             <Label>{label}</Label>
             <Percentage>{percentage}%</Percentage>
@@ -20,6 +19,7 @@ const Statistics = () => {
 };
 
 Statistics.propTypes = {
+title: PropTypes.string,
 label: PropTypes.string,
 percentage: PropTypes.number,
 };

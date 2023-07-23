@@ -1,6 +1,7 @@
 import Profile from 'components/Profile/Profile'
 import React from 'react'
 import user from './assets/user'
+import data from './assets/data'
 import Statistics from 'components/Statistics/Statistics'
 import FriendList from 'components/FriendList/FriendList';
 import TransactionHistory from 'components/TransactionHistory/TransactionHistory';
@@ -16,7 +17,7 @@ const App = () => {
         stats={user.stats}
       />
       
-      <Statistics />
+      <Statistics title="Upload stats" stats={data}/>
 
       <FriendList />
 
